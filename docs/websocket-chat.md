@@ -8,7 +8,7 @@ This project includes a minimal WebSocket chat to demonstrate real‑time commun
 ## Install server dependency
 
 ```
-npm i ws
+npm i 
 ```
 
 ## Run
@@ -16,7 +16,7 @@ npm i ws
 - Terminal 1 (start the WebSocket server):
 
 ```
-npm run server
+npm run serve
 ```
 
 - Terminal 2 (start the Vite dev server):
@@ -68,8 +68,4 @@ WebSocket is a web protocol that lets the browser and server keep a single, long
   - Inbound from client: `{ user: string, text: string }`.
   - Outbound from server: `{ id, type: 'chat' | 'system', user, text, ts, self? }`.
 
-## Notes & tips
 
-- Environment: You can override the WebSocket URL by setting `VITE_WS_URL`.
-- Reconnect strategy: For production, consider auto‑reconnect with backoff (not included in this demo).
-- Validation & security: In production, validate/sanitize messages and authenticate users before accepting traffic.
