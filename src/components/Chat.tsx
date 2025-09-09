@@ -63,7 +63,9 @@ export default function Chat() {
   return (
     <Card className="max-w-2xl mx-auto p-4 border border-gray-300 rounded-xl shadow-lg bg-white">
       <CardHeader className="flex flex-row items-center justify-between mb-4">
-        <CardTitle className="text-2xl font-semibold">WebSocket Chat</CardTitle>
+        <CardTitle className="text-2xl font-semibold">
+          WebSocket Chat Para Kay Sir Rael
+        </CardTitle>
         <Badge
           className={
             connected
